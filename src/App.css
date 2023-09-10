@@ -15,6 +15,12 @@ header {
 
 /* typography */
 
+h1 {
+  font-family: Playfair Display SC;
+  font-size: 64px;
+  text-align: center;
+}
+
 html {
   font-family: 'helvetica neue', sans-serif;
 }
@@ -54,7 +60,50 @@ table {
   text-overflow: ellipsis;
 }
 
-/* Column Size for thead */
+thead th:nth-child(1),
+thead th:nth-child(2),
+thead th:nth-child(3),
+thead th:nth-child(6) {
+  width: 10%;
+}
 
+thead th:nth-child(4),
+thead th:nth-child(5) {
+  width: 30%;
+}
 
 /* Column size for tbody */
+td:nth-child(1),
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(6) {
+  width: 10%;
+}
+
+td:nth-child(4),
+td:nth-child(5) {
+  width: 30%;
+}
+
+/* Zebra striping for odd rows in tbody */
+tbody tr:nth-child(odd) {
+  background-color: #fff0c7;
+}
+
+/* Apply object-fit and set width and height for images */
+td img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+
+/* Fit the form input widths within the table */
+
+input[type="text"],
+input[type="url"] {
+  width: 90%;
+}
+
+textarea {
+  width: 65%;
+}
