@@ -13,8 +13,8 @@ function RecipeList({recipes, deleteRecipe}) {
         <thead>
         </thead>
         <tbody>
-        {recipes.map((recipe, index) => (
-              <RecipeView key={index} recipe={recipe} deleteRecipe={deleteRecipe} />
+        {recipes.map((recipe) => (
+              <RecipeView recipe={recipe} deleteRecipe={deleteRecipe} />
           ))}
         </tbody>
       </table>
